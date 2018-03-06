@@ -37,7 +37,8 @@
 
 
 .obligatory{
-  overflow-x: hidden;
+
+
 
 }
  /***********/
@@ -69,7 +70,7 @@
      color: rgba(0,0,0,0.2);
     font:1200;
     	 display:block;
-  	  background: url(../img/forme2.png) no-repeat;
+  	  background: url(../img/black2.svg) no-repeat;
   	 /* -webkit-background-clip: text;*/
   	  background-clip: text;
   	  -webkit-animation: test  5s linear forwards;
@@ -80,7 +81,7 @@
 
   @keyframes test {
   	0% { background-position: 45% 100%; }
-  	100% { background-position: 50% 60%; }
+  	100% { background-position: 70% 60%; }
   }
   @keyframes finish {
     0% { height: 100%;}
@@ -103,7 +104,6 @@
 .rect{
   background: white;
   width: 100vw;
-  height: 100vh;
   z-index: 1000;
   overflow: hidden;
 }
@@ -112,6 +112,7 @@
   width: 100%;
   display: flex;
   position: fixed;
+  z-index: 999;
 }
 
 .logo-acceuil{
@@ -141,16 +142,19 @@
 }
 .about{
   right: 155px;
-  margin-right: 20px;
+  margin-right: 32px;
+  margin-top: 1px;
 }
 .title-center{
-  height: 100%;
+  height: 100vh;
   width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+}
+.container-enter{
+  display: flex;
+  margin-left: 33%;
 }
 
 .title-principal{
@@ -165,11 +169,9 @@
 }
 .joe-competence{
   font-size: 54px;
-  margin-top: 20px;
+  margin-top: 25px;
   font-family: 'Gotham-bold' ;
   margin-left: 5px;
-
-
 }
 
 .up{
@@ -180,8 +182,8 @@
 }
 .animation{
   display: block;
-  animation: monte 15s linear forwards;
-  animation-delay: 7.5s;
+  animation: monte 8s linear infinite;
+  animation-delay: 6s;
 }
 
 
@@ -242,6 +244,9 @@
   /*animation: up2 1s   infinite;
   animation-delay: 0.2s;*/
 }
+.myAudio{
+  display: none;
+}
 .anim{
     animation: up3 1.5s infinite;
 }
@@ -264,7 +269,7 @@
 .scroll{
   width: 33.3%;
   padding-bottom: 50px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .scroll-downs {
   position: absolute;
@@ -307,15 +312,35 @@
 /*Element expresion down page*/
 .down-page-2{
   display: none;
+
+}
+.expresion{
   position: relative;
+}
+.list-expresion{
+  position: absolute;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: 'Playfair-Regular';
+  display: none;
+  animation-name: next;
+  animation-timing-function:ease-in-out;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+}
+@keyframes next {
+  0% { opacity: 0; }
+  10% {  opacity: 1; }
+  100% {  opacity: 0; }
+}
+.special-expresion{
+  font-family: 'Playfair-Italic';
 }
 
 .visible3{
   display: block;
-  
+
 }
-
-
 
   /*ELEMENT CONTACT*/
 
@@ -331,6 +356,47 @@
   right: 50px;
   font-family: 'Gotham-light';
 }
+.container-robot{
+  display: none;
+}
+.back-to-top{
+  width: 110px;
+  height: 40px;
+  background: black;
+  position: absolute;
+  bottom: 99px;
+  right: 56px;
+}
+.text-back{
+  color: white;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 17px;
+}
+.container-r2d2{
+  width: 110px;
+  height: 126px;
+  position: absolute;
+  bottom: 138px;
+  right: 56px;
+  overflow: hidden;
+}
+.r2d2{
+  width: 110px;
+  height: 109px;
+  position: absolute;
+  bottom: -108px;
+  animation: r2d2 8s forwards;
+}
+.Copyright{
+  display: none;
+  margin-top: 20px;
+}
+@keyframes r2d2 {
+  0%{bottom: -108px}
+  100%{bottom: 0px;}
+}
+
 
 /*page 2 la description de joe*/
 
@@ -340,7 +406,7 @@
       overflow: hidden;
   }
   .text-description{
-    margin-left: 50px;
+    margin-left: 140px;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -355,6 +421,13 @@
   }
   .just-align{
     display: flex;
+  }
+  .title-page2{
+    font-family: 'Gotham-bold';
+    position: absolute;
+    padding-bottom: 24%;
+    font-size: 100px;
+    color: #D6D6D6;
 
   }
   .list-location{
@@ -363,6 +436,8 @@
     position: absolute;
   display: none;
   width: 100%;
+  margin-left: 10px;
+  margin-top: -2px;
 
 
   }
@@ -388,14 +463,23 @@
     width: 100vw;
   }
   .div-project{
-    margin-left: 50px;
+    margin-left: 100px;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: center;
   }
+  .title-project{
+    color: #D6D6D6;
+    font-size: 100px;
+    font-family: 'Gotham-bold';
+  position: absolute;
+    font-size: 100px;
+    margin-left: 42px;
+    top: 12%;
+  }
   .divheight{
-    height: 60%;
+    height: 49%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -406,10 +490,11 @@
   .the-project{
     font-size: 30px;
     font-family: 'Gotham-light';
-    margin-top: 40px;
+    margin-top: 37px;
     margin-left: 50px;
-
-
+  }
+  .hashtag{
+    font-size: 25px;
   }
   .line{
     border-bottom: 1px solid;
@@ -417,12 +502,32 @@
   }
   .textcolor{
     color: #D6D6D6;
+  }
+  .mobile{
 
+  }
+  .no-desktop{
+    display: none;
+  }
+  .no-desktop1{
+    display: none;
+    margin-top: 5px;
   }
 
   /***********/
   /**last page*/
   /***********/
+
+
+  .ready-title{
+    color: #D6D6D6;
+    font-size: 100px;
+    font-family: 'Gotham-bold';
+    position: absolute;
+    top: 12%;
+    font-size: 100px;
+
+  }
   .last-page{
     height: 100vh;
     width: 100vw;
@@ -434,16 +539,248 @@
   .text-last-page{
     font-size: 32px;
     font-family: 'Gotham-light';
+    margin-top: 12px;
+  }
+  .lien{
+    text-decoration: none;
+    color: black;
   }
 
 
+  /*MEDIA QUERIES FOR MOBILE */
+  @media (max-width: 480px) {
+    /*affichage uniquement sur mobile */
+    /*header*/
+    .acceuil{
+      font-size: 17px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .about{
+      margin-right: 32px;
+      margin-top: 0px;
+      right: 63px;
+    }
+    .navig{
+      font-size: 17px;
+      margin-left: 5px;
+      top: 20px;
+    }
+    .project{
+      right: 22px;
+    }
+    /* page 2 */
+    .joe-competence {
+    margin-top: 45px;
+    font-size: 28px;
+    }
+    .title-principal {
+    font-size: 25px;
+    }
+    .container-enter{
+      margin-left: 9%;
+    }
+    .title-principal{
+      width: 50%;
+      margin-left: 0px;
+      margin-right: 0;
+    }
+    .animation{
+      width: 100%;
+    }
+    /*2eme page*/
+    .up{
+      height: 30px;
+    }
+    /*page 3*/
+    .title-page2{
+      padding-bottom: 80%;
+      font-size: 50px;
+    }
+    .list-location{
+      font-size: 20px;
+
+    }
+    .directory-list-location{
+      animation: longueurSmartphone 3s infinite;
+    }
+    .text-description{
+      margin-left: 20px;
+    }
+    .text-in-description{
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    /* page 4 */
+    .title-project{
+      margin-left: 0;
+      font-size: 50px;
+    }
+    .div-project{
+      margin-left: 20px;
+    }
+    .the-project{
+      margin-left: 20px;
+      margin-top: 14px;
+      font-size: 18px;
+    }
+    .divheight{
+      height: 50%;
+    }
+    .hashtag{
+      font-size: 10px;
+    }
+    .mobile{
+      display: none;
+    }
+    .no-desktop{
+      display: inline-block;
+    }
+    .no-desktop1{
+      display: block;
+    }
+    .textcolor{
+      font-size: 15px;
+    }
+    /* for page*/
+    .ready-title{
+      font-size: 50px;
+    }
+    .title-last-page{
+      font-size: 21px;
+    }
+    .text-last-page{
+      font-size: 12px;
+    }
+    /*footer*/
+    .scroll{
+      margin-top: 60px;
+      margin-right: 0px;
+      padding-bottom: 0px;
+    }
+    .Contact{
+      font-size: 17px;
+      bottom: 20px;
+      right: 20px;
+    }
+    .soundtrack{
+      padding-left: 20px;
+      padding-bottom: 20px;
+     padding-right: 20px;
+    }
+    .back-to-top{
+      width: 50px;
+    height: 40px;
+    bottom: 47px;
+    right: 31px;
+    }
+    .text-back{
+      font-size: 12px;
+    }
+    .r2d2{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: -108px;
+    }
+    .container-r2d2{
+      width: 106px;
+      height: 109px;
+      bottom: 87px;
+      right: -26px;
+    }
+  }
+
+
+  /*MEDIA QUERIES FOR TABLET */
+  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    /*affichage uniquement sur TABLET */
+    /* 1ere pgae*/
+    .joe{
+      font-size: 125px;
+    }
+    /*2eme page */
+    .container-enter{
+      margin-left: 9%;
+    }
+    .title-principal{
+      width: 50%;
+      margin-left: 0px;
+    }
+    .animation{
+      width: 100%;
+    }
+    .joe-competence{
+      margin-top: 16px;
+    }
+    /*2eme page*/
+    .title-page2{
+      padding-bottom: 80%;
+      font-size: 70px;
+    }
+    .list-location{
+      font-size: 28px;
+    }
+    .text-description{
+      margin-left: 100px;
+    }
+    .text-in-description{
+      font-size: 28px;
+    }
+    .list-expresion{
+      margin-right: -150px;
+      margin-left: -118px;
+      margin-top: 14px;
+    }
+    /*3eme page*/
+    .title-project{
+      margin-left: 0;
+      font-size: 70px;
+    }
+    .the-project{
+      font-size: 20px;
+      font-family: 'Gotham-light';
+      margin-top: 37px;
+      margin-left: 0;
+    }
+    .hashtag{
+      font-size: 15px;
+    }
+    /*4 eme page*/
+    .title-last-page{
+      font-size: 33px;
+    }
+    .text-last-page{
+      font-size: 20px;
+    }
+    .ready-title{
+      font-size: 70px;
+    }
+    .div-project{
+          margin-right: 50px;
+    }
+    /* footer*/
+    .scroll{
+      margin-right: 80px;
+    }
+  }
+  /*MEDIA QUERIES FOR DESKTOP */
+  @media (max-width: 960px) {
+    /*affichage uniquement sur desktop */
+    .nom-de-class{}
+  }
+  /*MEDIA QUERIES FOR DESKTOP LARGE */
+  @media (max-width: 1280px) {
+    /*affichage uniquement desktop large */
+    .nom-de-class{}
+  }
 
 
 /* animation*/
 @keyframes monte {
 
   0%{margin-top:0px; }
-  100%{margin-top: -1050px; }
+  100%{margin-top: -400px; }
 }
 @keyframes up {
   0%{height: 25px;}
@@ -469,6 +806,11 @@
 @keyframes longueur {
   0%{width: 0px;}
   50%{width: 280px;}
+  100%{width: 0px;}
+}
+@keyframes longueurSmartphone {
+  0%{width: 0px;}
+  50%{width: 105px;}
   100%{width: 0px;}
 }
 @keyframes aparition {

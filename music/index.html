@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1" />
+
+<title>Example of How to Play a Sound on Click or on MouseOver</title>
+
+<script language="javascript" type="text/javascript">
+
+function playSound(soundfile) {
+
+  document.getElementById("dummy").innerHTML=
+
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<span id="dummy"></span>
+
+<p><a href="#" onclick="playSound(https://www.youtube.com/watch?v=hHOfd7tWZtA);">Click here to hear a bird sing</a></p>
+
+<p onmouseover="playSound(https://www.youtube.com/watch?v=hHOfd7tWZtA);">Or you can put your mouse over this paragraph to hear the same bird sound.</p>
+
+</body>
+
+</html>
