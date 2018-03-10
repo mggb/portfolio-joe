@@ -16,17 +16,11 @@
    font-style: normal;
  }
  @font-face {
-   font-family: 'Playfair-Italic';
-   src: url('../fonts/gotham/PlayfairDisplay-Italic.TTF') format('truetype');
+   font-family: 'anticdidone';
+   src: url('../fonts/anticdidone/AnticDidone-Regular.TTF') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
-  @font-face {
-    font-family: 'Playfair-Regular';
-    src: url('../fonts/gotham/PlayfairDisplay-Regular') format('truetype');
-     font-weight: 400;
-     font-style: normal;
-   }
 
 @font-face {
   font-family: 'Gotham-light';
@@ -70,7 +64,7 @@
      color: rgba(0,0,0,0.2);
     font:1200;
     	 display:block;
-  	  background: url(../img/black2.svg) no-repeat;
+  	  background: url(../img/forme.png) no-repeat;
   	 /* -webkit-background-clip: text;*/
   	  background-clip: text;
   	  -webkit-animation: test  5s linear forwards;
@@ -80,8 +74,8 @@
     }
 
   @keyframes test {
-  	0% { background-position: 45% 100%; }
-  	100% { background-position: 70% 60%; }
+  	0% { background-position: 40% 100%; }
+  	100% { background-position: 50% 70%; }
   }
   @keyframes finish {
     0% { height: 100%;}
@@ -145,6 +139,14 @@
   margin-right: 32px;
   margin-top: 1px;
 }
+.hrefAbout{
+  text-decoration: none;
+  color: black;
+}
+.hrefProject{
+  text-decoration: none;
+  color: black;
+}
 .title-center{
   height: 100vh;
   width: 100%;
@@ -200,7 +202,7 @@
 .soundtrack{
     display: flex;
     padding-left: 50px;
-    width: 33%;
+    width: 23%;
     padding-bottom: 50px;
     padding-right: 50px;
     align-items: flex-end;
@@ -269,7 +271,7 @@
 .scroll{
   width: 33.3%;
   padding-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 87px;
 }
 .scroll-downs {
   position: absolute;
@@ -290,7 +292,7 @@
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
-  margin: 0 auto;
+  margin-left: 62%;
 }
 .scroller {
   width: 3px;
@@ -308,7 +310,9 @@
   100% { transform: translateY(15px); opacity: 0;}
 }
 
-
+.returnLigne{
+  display: none;
+}
 /*Element expresion down page*/
 .down-page-2{
   display: none;
@@ -321,12 +325,17 @@
   position: absolute;
   padding-top: 10px;
   font-size: 20px;
-  font-family: 'Playfair-Regular';
+  font-family: 'anticdidone';
   display: none;
   animation-name: next;
   animation-timing-function:ease-in-out;
   animation-duration: 14s;
   animation-iteration-count: infinite;
+  TEXT-ALIGN: CENTER;
+LINE-HEIGHT: 30px;
+width: 126%;
+top: -16px;
+}
 }
 @keyframes next {
   0% { opacity: 0; }
@@ -334,7 +343,7 @@
   100% {  opacity: 0; }
 }
 .special-expresion{
-  font-family: 'Playfair-Italic';
+  font-family: 'anticdidone';
 }
 
 .visible3{
@@ -355,6 +364,8 @@
   bottom: 50px;
   right: 50px;
   font-family: 'Gotham-light';
+  text-decoration: none;
+  color: white;
 }
 .container-robot{
   display: none;
@@ -367,11 +378,20 @@
   bottom: 99px;
   right: 56px;
 }
+.hrefContact{
+  text-decoration: none;
+  color: black;
+}
+.hrefBackToTop{
+  text-decoration: none;
+  color: white;
+}
 .text-back{
   color: white;
   text-align: center;
   padding-top: 9px;
   font-size: 17px;
+  text-decoration: none;
 }
 .container-r2d2{
   width: 110px;
@@ -391,6 +411,10 @@
 .Copyright{
   display: none;
   margin-top: 20px;
+  padding-left: 24%;
+  margin-top: 38px;
+  font-family: 'anticdidone';
+  width: 106%;
 }
 @keyframes r2d2 {
   0%{bottom: -108px}
@@ -415,6 +439,7 @@
   .text-in-description{
     font-size: 54px;
     font-family: 'Gotham-light';
+    margin-top: 10px;
   }
   .textgresse{
     font-family: 'Gotham-bold';
@@ -437,7 +462,7 @@
   display: none;
   width: 100%;
   margin-left: 10px;
-  margin-top: -2px;
+  margin-top: 10px;
 
 
   }
@@ -494,14 +519,15 @@
     margin-left: 50px;
   }
   .hashtag{
-    font-size: 25px;
+    font-size: 24px;
   }
   .line{
     border-bottom: 1px solid;
     text-decoration: none;
   }
   .textcolor{
-    color: #D6D6D6;
+    color: #C5C3C6;
+    font-size: 24px;
   }
   .mobile{
 
@@ -524,7 +550,7 @@
     font-size: 100px;
     font-family: 'Gotham-bold';
     position: absolute;
-    top: 12%;
+    top: 24%;
     font-size: 100px;
 
   }
@@ -535,11 +561,12 @@
   .title-last-page{
     font-size: 52px;
     font-family: 'Gotham-light';
+    margin-top: 1%;
   }
   .text-last-page{
     font-size: 32px;
     font-family: 'Gotham-light';
-    margin-top: 12px;
+    margin-top: 3%;
   }
   .lien{
     text-decoration: none;
@@ -551,6 +578,9 @@
   @media (max-width: 480px) {
     /*affichage uniquement sur mobile */
     /*header*/
+    .joe{
+      font-size: 64px;
+    }
     .acceuil{
       font-size: 17px;
       margin-left: 20px;
@@ -570,6 +600,9 @@
       right: 22px;
     }
     /* page 2 */
+    .title-center{
+      height: 100vh;
+    }
     .joe-competence {
     margin-top: 45px;
     font-size: 28px;
@@ -588,6 +621,7 @@
     .animation{
       width: 100%;
     }
+
     /*2eme page*/
     .up{
       height: 30px;
@@ -599,6 +633,8 @@
     }
     .list-location{
       font-size: 20px;
+        margin-left: 0;
+        margin-top: 9px;
 
     }
     .directory-list-location{
@@ -609,7 +645,8 @@
     }
     .text-in-description{
       font-size: 20px;
-      margin-right: 20px;
+      margin-right: 4px;
+
     }
     /* page 4 */
     .title-project{
@@ -647,10 +684,11 @@
       font-size: 50px;
     }
     .title-last-page{
-      font-size: 21px;
+      font-size: 22px;
     }
     .text-last-page{
-      font-size: 12px;
+      font-size: 14px;
+      margin-top: 6%;
     }
     /*footer*/
     .scroll{
@@ -675,7 +713,8 @@
     right: 31px;
     }
     .text-back{
-      font-size: 12px;
+      font-size: 11px;
+      margin-top: 6px;
     }
     .r2d2{
       width: 50px;
@@ -689,6 +728,22 @@
       bottom: 87px;
       right: -26px;
     }
+    .list-expresion{
+      display: none;
+    }
+    .copyright{
+      padding-left: 0%;
+      margin-top: 34px;
+      font-family: 'anticdidone';
+      width: 157%;
+      font-size: 10px;
+    }
+    .soundtrack{
+      width: 14%;
+    }
+    .returnLigne{
+      display: block;
+    }
   }
 
 
@@ -700,6 +755,7 @@
       font-size: 125px;
     }
     /*2eme page */
+
     .container-enter{
       margin-left: 9%;
     }
@@ -715,7 +771,7 @@
     }
     /*2eme page*/
     .title-page2{
-      padding-bottom: 80%;
+      padding-bottom: 70%;
       font-size: 70px;
     }
     .list-location{
@@ -731,6 +787,9 @@
       margin-right: -150px;
       margin-left: -118px;
       margin-top: 14px;
+      top: 18px;
+      color: black;
+      font-weight: bold;
     }
     /*3eme page*/
     .title-project{
@@ -746,6 +805,13 @@
     .hashtag{
       font-size: 15px;
     }
+    .mobile{
+      display: none;
+    }
+    .no-desktop{
+      display: block;
+    }
+
     /*4 eme page*/
     .title-last-page{
       font-size: 33px;
@@ -759,11 +825,91 @@
     .div-project{
           margin-right: 50px;
     }
+    .divheight{
+      height: 58%;
+    }
     /* footer*/
     .scroll{
       margin-right: 80px;
+      width: 52.3%;
+    }
+    .copyright{
+      padding-left: 0%;
+      margin-top: 38px;
+      font-family: 'anticdidone';
+      width: 100%;
+      margin-left: 11%;
+    }
+    .no-desktop{
+      display: inline-block;
+    }
+    .no-desktop1{
+      display: block;
+    }
+    .list-expresion{
+      margin-left: -18px;
+      margin-top: -27px;
+      top: 18px;
+      font-size: 17px;
     }
   }
+  @media only screen and (min-width : 1024px) and (max-width : 1366px) {
+    .title-page2{
+      padding-bottom: 54%;
+      font-size: 90px;
+    }
+    .title-principal {
+    width: 36%;
+    margin-left: 0px;
+    }
+    .scroll{
+      width: 92.3%;
+      margin-left: 15%;
+      margin-top: 12%;
+    }
+    .mousey{
+      margin-left: 32%
+    }
+    .copyright{
+          margin-top: 63px;
+          margin-left: 0%;
+          width: 70%;
+    }
+    .the-project{
+      font-size: 40px;
+    }
+      .no-desktop{
+        display: inline-block;
+      }
+      .no-desktop1{
+        display: block;
+      }
+      .mobile{
+        display: none;
+      }
+      .textcolor{
+        font-size: 30px;
+      }
+      .list-expresion{
+        margin-left: -115px;
+        margin-top: -27px;
+        top: 49px;
+        font-size: 23px;
+      }
+    }
+    @media only screen and (min-width : 414px) and (max-width : 776px){
+      .copyright{
+            margin-top: 46px;
+            font-size: 11px;
+      }
+      .title-principal{
+        width: 42%;
+      }
+      .mousey{
+        margin-left: 71%;
+      }
+    }
+
   /*MEDIA QUERIES FOR DESKTOP */
   @media (max-width: 960px) {
     /*affichage uniquement sur desktop */
@@ -805,7 +951,7 @@
 
 @keyframes longueur {
   0%{width: 0px;}
-  50%{width: 280px;}
+  50%{width: 300px;}
   100%{width: 0px;}
 }
 @keyframes longueurSmartphone {

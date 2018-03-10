@@ -46,21 +46,10 @@ function lol() {
 var actuel;
 var mousseActive = document.querySelector('.mousey');
 var expresion =document.querySelector('.down-page-2');
+var onepage =document.querySelector('.title-center');
 var secondPage =document.querySelector('.description-joe')
 var threePage =document.querySelector('.project-joe')
 var forPage =document.querySelector('.last-page')
-
-window.addEventListener('wheel',function () {
-  if (secondPage.classList.contains("active") ) {
-    mousseActive.style.display="none";
-    expresion.style.display="block";
-  }
-  else {
-    mousseActive.style.display="block"
-    expresion.style.display="none";
-
-  }
-})
 var fullexpresion =document.querySelectorAll('.list-expresion');
 var delay =0;
 setInterval(next, 12000);
@@ -73,54 +62,101 @@ function next() {
   fullexpresion[delay].classList.add('visible');
 }
 var about =document.querySelector('.about')
-window.addEventListener('wheel',function () {
-  if (secondPage.classList.contains("active")){
-    about.style.fontFamily='Gotham-bold'
-  }
-  else {
-    about.style.fontFamily=''
-  }
-});
 var project =document.querySelector('.project')
-window.addEventListener('wheel',function () {
-  if (threePage.classList.contains("active")){
-    project.style.fontFamily='Gotham-bold'
-  }
-  else {
-    project.style.fontFamily=''
-  }
-});
 var contact=document.querySelector('.Contact');
-window.addEventListener('wheel',function () {
-  if (forPage.classList.contains("active")){
-    contact.style.fontFamily='Gotham-bold'
-  }
-  else {
-    contact.style.fontFamily=''
-  }
-});
 var copyright=document.querySelector('.Copyright')
+var containerRobot =document.querySelector('.container-robot');
+var backToTop=document.querySelector('.text-back')
+
 window.addEventListener('wheel',function () {
-  if (threePage.classList.contains("active")) {
-    mousseActive.style.display="none";
-    copyright.style.display='block';
+  if (onepage.classList.contains("active")) {
+    mousseActive.style.display="block";
   }
   else {
     mousseActive.style.display="none";
-    copyright.style.display='';
   }
 });
 
-var containerRobot =document.querySelector('.container-robot');
+window.addEventListener('wheel',function () {
+  if (secondPage.classList.contains("active")){
+    about.style.fontFamily='Gotham-bold'
+    expresion.style.display="block";
+  }
+  else {
+    about.style.fontFamily='';
+    expresion.style.display="";
+  }
+});
+
+window.addEventListener('wheel',function () {
+  if (threePage.classList.contains("active")) {
+    copyright.style.display='block';
+    project.style.fontFamily='Gotham-bold'
+  }
+  else {
+    copyright.style.display='';
+    project.style.fontFamily=''
+  }
+});
+
 window.addEventListener('wheel',function () {
   if (forPage.classList.contains("active")) {
     containerRobot.style.display='block';
-    mousseActive.style.display="none";
     copyright.style.display='block';
+    contact.style.fontFamily='Gotham-bold'
+    console.log('lolscroll');
   }
   else {
     containerRobot.style.display='';
-    mousseActive.style.display="none";
     copyright.style.display='';
+    contact.style.fontFamily=''
   }
 });
+window.addEventListener('wheel',function () {
+  console.log(window.scrollY);
+
+});
+
+function clear() {
+  mousseActive.style.display="none";
+  about.style.fontFamily='';
+  expresion.style.display="";
+  copyright.style.display='';
+  project.style.fontFamily='';
+  copyright.style.display='';
+  contact.style.fontFamily='';
+  containerRobot.style.display='';
+}
+
+backToTop.addEventListener('click',function () {
+  setTimeout(function () {
+    clear()
+    mousseActive.style.display="block";
+  }, 200);
+});
+
+about.addEventListener('click',function () {
+  setTimeout(function () {
+    clear()
+    about.style.fontFamily='Gotham-bold'
+    expresion.style.display="block";
+  }, 200);
+});
+
+project.addEventListener('click',function () {
+  setTimeout(function () {
+    clear()
+    copyright.style.display='block';
+    project.style.fontFamily='Gotham-bold'
+  }, 200);
+})
+
+contact.addEventListener('click',function () {
+  setTimeout(function () {
+    clear()
+    containerRobot.style.display='block';
+    copyright.style.display='block';
+    contact.style.fontFamily='Gotham-bold'
+
+  }, 200);
+})
