@@ -899,8 +899,8 @@ top: -16px;
     }
     @media only screen and (min-width : 414px) and (max-width : 776px){
       .copyright{
-            margin-top: 46px;
-            font-size: 11px;
+        margin-top: 46px;
+        font-size: 11px;
       }
       .title-principal{
         width: 42%;
@@ -909,18 +909,189 @@ top: -16px;
         margin-left: 71%;
       }
     }
+    @media (orientation: landscape) and (max-device-width : 667px) {
+      .navig{
+        right: 20px;
+        top: 20px;
+        font-size: 20px;
+      }
+      .acceuil{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .soundtrack{
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+      .contact{
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+      }
+      .about{
+        right: 90px;
+      }
+      .container-enter{
+        margin-left: 5%;
+      }
+      .title-principal{
+        width: 73%;
+        margin-right: 0;
+      }
+      .text-description{
+        margin-left: 50px;
+      }
+      .text-in-description{
+        font-size: 23px;
+      }
+      .list-location{
+        font-size: 23px;
+      }
+      .title-page2{
+        font-size: 50px;
+      }
+      .the-project{
+        font-size: 13px;
+        margin-top: 17px;
+        margin-left: 0;
+      }
+      .title-project{
+        font-size: 50px;
+        margin-left: 0px;
+      }
+      .hashtag{
+        font-size: 13px;
+      }
+      .textcolor{
+        font-size: 13px;
+      }
+      .div-project{
+        margin-left: 50px;
+      }
+      .title-last-page{
+        font-size: 25px;
+      }
+      .text-last-page{
+        font-size: 15px;
+      }
+      .ready-title{
+        top: 19%;
+        font-size: 50px;
+      }
+      .container-r2d2{
+        width: 110px;
+        height: 126px;
+        bottom: 79px;
+        right: -30px;
+      }
+      .r2d2{
+        width: 50px;
+        height: 50px;
+      }
+      .back-to-top{
+        width: 77px;
+        height: 29px;
+        bottom: 50px;
+        right: 20px;
+      }
+      .text-back{
+        padding-top: 4px;
+      }
 
-  /*MEDIA QUERIES FOR DESKTOP */
-  @media (max-width: 960px) {
-    /*affichage uniquement sur desktop */
-    .nom-de-class{}
-  }
-  /*MEDIA QUERIES FOR DESKTOP LARGE */
-  @media (max-width: 1280px) {
-    /*affichage uniquement desktop large */
-    .nom-de-class{}
-  }
+    }
+    @media (orientation: landscape) and (min-width : 669px) and (max-device-width : 750px) {
 
+      .navig{
+        right: 20px;
+        top: 20px;
+        font-size: 20px;
+      }
+      .acceuil{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .soundtrack{
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+      .contact{
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+      }
+      .about{
+        right: 90px;
+      }
+      .container-enter{
+        margin-left: 5%;
+      }
+      .title-principal{
+        width: 55%;
+        margin-right: 0;
+      }
+      .text-description{
+        margin-left: 50px;
+      }
+      .text-in-description{
+        font-size: 23px;
+      }
+      .list-location{
+        font-size: 23px;
+      }
+      .title-page2{
+        font-size: 50px;
+      }
+      .the-project{
+        font-size: 13px;
+        margin-top: 17px;
+        margin-left: 0;
+      }
+      .title-project{
+        font-size: 50px;
+        margin-left: 0px;
+      }
+      .hashtag{
+        font-size: 13px;
+      }
+      .textcolor{
+        font-size: 13px;
+      }
+      .div-project{
+        margin-left: 50px;
+      }
+      .title-last-page{
+        font-size: 25px;
+      }
+      .text-last-page{
+        font-size: 15px;
+      }
+      .ready-title{
+        top: 19%;
+        font-size: 50px;
+      }
+      .container-r2d2{
+        width: 110px;
+        height: 126px;
+        bottom: 79px;
+        right: -30px;
+      }
+      .r2d2{
+        width: 50px;
+        height: 50px;
+      }
+      .back-to-top{
+        width: 77px;
+        height: 29px;
+        bottom: 50px;
+        right: 20px;
+      }
+      .text-back{
+        padding-top: 4px;
+      }
+
+    }
 
 /* animation*/
 @keyframes monte {
