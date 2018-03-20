@@ -1,4 +1,6 @@
-
+$(document).ready(function () {
+  $('#wrapper').fullpage({anchor:['acceuil','about', 'project', 'contact']});
+});
 var soundparents=document.querySelector('.soundtrack');
 var sound = document.querySelector('.soundtrack-bar');
 var sound2 = document.querySelector('.soundtrack-bar2');
