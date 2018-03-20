@@ -8,8 +8,8 @@ var sound5 = document.querySelector('.soundtrack-bar5');
 var l =0;
 var x = document.querySelector(".myAudio");
 
-
-var changeSonore = true
+x.play()
+var changeSonore = false
 soundparents.addEventListener('click',function () {
   if (changeSonore===true) {
     sound.classList.toggle("anim");

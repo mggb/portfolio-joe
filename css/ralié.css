@@ -30,11 +30,6 @@
  }
 
 
-.obligatory{
-
-
-
-}
  /***********/
  /**ACEEUIL*/
   /***********/
@@ -137,7 +132,7 @@
 .about{
   right: 155px;
   margin-right: 32px;
-  margin-top: 1px;
+
 }
 .hrefAbout{
   text-decoration: none;
@@ -332,9 +327,9 @@
   animation-duration: 14s;
   animation-iteration-count: infinite;
   TEXT-ALIGN: CENTER;
-LINE-HEIGHT: 30px;
-width: 126%;
-top: -16px;
+  LINE-HEIGHT: 30px;
+  width: 126%;
+
 }
 }
 @keyframes next {
@@ -411,10 +406,11 @@ top: -16px;
 .Copyright{
   display: none;
   margin-top: 20px;
-  padding-left: 24%;
   margin-top: 38px;
   font-family: 'anticdidone';
-  width: 106%;
+  width: 100%;
+  text-align: center;
+  margin-left: 16%;
 }
 @keyframes r2d2 {
   0%{bottom: -108px}
@@ -462,7 +458,7 @@ top: -16px;
   display: none;
   width: 100%;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 9px;
 
 
   }
@@ -707,10 +703,10 @@ top: -16px;
      padding-right: 20px;
     }
     .back-to-top{
-      width: 50px;
-    height: 40px;
+      width: 69px;
+      height: 40px;
     bottom: 47px;
-    right: 31px;
+    right: 19px;
     }
     .text-back{
       font-size: 11px;
@@ -1090,7 +1086,24 @@ top: -16px;
       .text-back{
         padding-top: 4px;
       }
-
+    }
+    @media (orientation: landscape) and (min-width : 768px) and (max-device-width : 1024px) {
+      .title-principal{
+            width: 38%;
+      }
+      .container-enter{
+        margin-left: 17%;
+      }
+      .scroll{
+        margin-top: 6%;
+      }
+      .textcolor{
+        font-size: 23px;
+      }
+      .the-project{
+        font-size: 27px;
+        margin-top: 17px;
+      }
     }
 
 /* animation*/
@@ -1122,12 +1135,12 @@ top: -16px;
 
 @keyframes longueur {
   0%{width: 0px;}
-  50%{width: 300px;}
+  50%{width: 375px;}
   100%{width: 0px;}
 }
 @keyframes longueurSmartphone {
   0%{width: 0px;}
-  50%{width: 105px;}
+  50%{width: 135px;}
   100%{width: 0px;}
 }
 @keyframes aparition {
